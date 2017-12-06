@@ -1,2 +1,3 @@
-# ovladanie-rele
-Ovládanie relé cez NodeMCU z webservera - iba online bez manuálneho režimu
+# Ovládanie relé z internetu
+Ovládanie relé cez webserver (HTTPS parser)
+V úlohe parsera NodeMCU v3 (Lolin)
