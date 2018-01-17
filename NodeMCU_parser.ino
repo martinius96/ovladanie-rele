@@ -1,7 +1,7 @@
 
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
-int led = 16; //PIN D0 na NODEMCU
+int rele = 16; //PIN D0 na NODEMCU
 const char* ssid = "wifimeno";
 const char* password = "wifiheslo";
 
@@ -13,7 +13,7 @@ const int httpsPort = 443;
 const char* fingerprint = "13 9f 87 1d b1 85 be e6 bd 73 c1 8d 04 63 58 99 f0 32 43 92";
 
 void setup() {
-   pinMode(led, OUTPUT);
+   pinMode(rele, OUTPUT);
   Serial.begin(115200);
   Serial.println();
   Serial.print("pripajam sa na ");
@@ -69,13 +69,13 @@ void loop() {
   String line = client.readStringUntil('\n');
  if(line=="1"){
   
-   digitalWrite(led, HIGH);   // zapni diodu
+   digitalWrite(rele, HIGH);   // zapni diodu
   
   }else if(line=="0"){
     
-     digitalWrite(led, LOW);   // vypni diodu
+     digitalWrite(rele, LOW);   // vypni diodu
     }else {
-       Serial.println("Ina chyba");
+       Serial.println("Nepodporovana premenna");
       }
   Serial.println("Prichadzajuca odpoved:");
   Serial.println("==========");
