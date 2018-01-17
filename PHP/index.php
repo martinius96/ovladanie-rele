@@ -25,7 +25,7 @@
    <input type="hidden" name="rele1" value="yes">
 	<h1>Ovládanie relé v domácnosti</h1>
   <fieldset>
-		<legend>Obývačka - prepäťovka</legend>
+		<legend>Relátko - test</legend>
 		<label onClick="document.getElementById('rele1f').submit();">
 			<input name="releon" type="checkbox" <?php if(file_get_contents("rele1.txt") === "1") echo "checked"; ?>>
 			<div>
