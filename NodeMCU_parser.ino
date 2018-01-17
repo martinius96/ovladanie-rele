@@ -5,12 +5,12 @@ int led = 16; //PIN D0 na NODEMCU
 const char* ssid = "wifimeno";
 const char* password = "wifiheslo";
 
-const char* host = "moj.webserver.com"; //bez www a https
+const char* host = "arduino.php5.sk"; //bez www a https
 const int httpsPort = 443;
 
 // Informacie o stranke, zobrazit certifikat (posledny/predposledny riadok)
 // SHA1 odtlacok certifikatu
-const char* fingerprint = "CF 05 98 89 CA FF 8E D8 5E 5C E0 C2 E4 F7 E6 C3 C7 50 DD 5C";
+const char* fingerprint = "13 9f 87 1d b1 85 be e6 bd 73 c1 8d 04 63 58 99 f0 32 43 92";
 
 void setup() {
    pinMode(led, OUTPUT);
@@ -49,7 +49,7 @@ void loop() {
     Serial.println("certifikat nesedi");
   }
 
-  String url = "/PHP/rele1.txt";
+  String url = "/rele/rele1.txt";
   Serial.print("requesting URL: ");
   Serial.println(url);
 
