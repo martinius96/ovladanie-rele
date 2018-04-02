@@ -1,4 +1,9 @@
-
+//Autor: Martin Chlebovec alias: martinius96
+//Podpora: https://www.paypal.me/Chlebovec
+//Osobný web: https://arduino.php5.sk
+//Email kontakt: martinius96@gmail.com
+//Facebook ID kontakt: 100001242570317
+//Používajte v súhade s licenciou!  
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
 int rele = 16; //PIN D0 na NODEMCU
