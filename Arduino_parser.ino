@@ -3,7 +3,7 @@
 //Osobný web: https://arduino.php5.sk
 //Email kontakt: martinius96@gmail.com
 //Facebook ID kontakt: 100001242570317
-//Používajte v súhade s licenciou!  
+//Používajte v súhlade s licenciou!  
 #include <SPI.h>
 #include <Ethernet.h>
 int rele = 6;
